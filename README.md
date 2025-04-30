@@ -136,4 +136,4 @@ MIT
 
 ## Contact
 
-For support or questions, please contact [yourname@example.com](mailto:work.devashishsharma09@gmail.com)
+For support or questions, please contact [work.devashishsharma09@gmail.com](mailto:work.devashishsharma09@gmail.com)
