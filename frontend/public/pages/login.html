@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApplyXpert</title>
+    <style>
+      /* Global Styles */
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ceab93, #f5eedc);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        width: 350px;
+        background-color: #ab886d;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        color: #522546;
+      }
+
+      h1 {
+        color: #88304e;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #deaa79;
+        color: #1b4242;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 15px;
+        background-color: #88304e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #522546;
+      }
+
+      p {
+        margin-top: 15px;
+        color: #474e68;
+      }
+
+      a {
+        text-decoration: none;
+        color: #1b4242;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      a:hover {
+        color: #522546;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      /* Toggle Buttons */
+      .toggle-btn {
+        background: none;
+        border: none;
+        color: #1b4242;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .toggle-btn:hover {
+        color: #522546;
+      }
+
+      /* Back to Home Link */
+      .back-home {
+        margin-top: 10px;
+        display: block;
+        font-size: 14px;
+        color: #474e68;
+      }
+
+      .back-home:hover {
+        color: #1b4242;
+      }
+    </style>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ApplyXpert</title>
+        <style>
+          /* Add your styles here */
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1 id="form-title">Login</h1>
+
+          <!-- Error Message -->
+          <p id="error-message" style="color: red"></p>
+
+          <!-- Login Form -->
+          <form id="login-form" onsubmit="handleLogin(event)">
+            <input
+              type="text"
+              id="login-username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <input type="submit" value="Login" />
+            <p>
+              Don't have an account?
+              <button type="button" class="toggle-btn" onclick="toggleForm()">
+                Sign Up
+              </button>
+            </p>
+          </form>
+
+          <!-- Register Form -->
+          <form
+            id="register-form"
+            class="hidden"
+            onsubmit="handleRegister(event)"
+          >
+            <input
+              type="text"
+              id="register-fullname"
+              name="fullname"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="email"
+              id="register-email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <input
+              type="text"
+              id="register-username"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <input
+              type="password"
+              id="register-password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+            <input type="submit" value="Register" />
+            <p>
+              Already have an account?
+              <button type="button" class="toggle-btn" onclick="toggleForm()">
+                Login
+              </button>
+            </p>
+          </form>
+
+          <a href="/" class="back-home">← Back to Home</a>
+        </div>
+
+        <script>
+          // Toggle between Login and Register forms
+          function toggleForm() {
+            let loginForm = document.getElementById("login-form");
+            let registerForm = document.getElementById("register-form");
+            let formTitle = document.getElementById("form-title");
+
+            if (loginForm.classList.contains("hidden")) {
+              loginForm.classList.remove("hidden");
+              registerForm.classList.add("hidden");
+              formTitle.textContent = "Login";
+            } else {
+              loginForm.classList.add("hidden");
+              registerForm.classList.remove("hidden");
+              formTitle.textContent = "Register";
+            }
+          }
+
+          // Handle Login
+          async function handleLogin(event) {
+            event.preventDefault();
+            const username = document.getElementById("login-username").value;
+            const password = document.getElementById("login-password").value;
+
+            try {
+              const response = await fetch(
+                "http://localhost:5001/api/auth/login",
+                {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ username, password }),
+                }
+              );
+
+              const data = await response.json();
+              if (response.ok) {
+                alert("Login successful!");
+                localStorage.setItem("token", data.token);
+                window.location.href = "/Dashboard";
+              } else {
+                document.getElementById("error-message").textContent =
+                  data.message || "Login failed";
+              }
+            } catch (error) {
+              console.error("Error:", error);
+              document.getElementById("error-message").textContent =
+                "An error occurred. Please try again.";
+            }
+          }
+
+          // Handle Register
+          async function handleRegister(event) {
+            event.preventDefault();
+            const fullname = document.getElementById("register-fullname").value;
+            const email = document.getElementById("register-email").value;
+            const username = document.getElementById("register-username").value;
+            const password = document.getElementById("register-password").value;
+
+            try {
+              const response = await fetch(
+                "http://localhost:5001/api/auth/register",
+                {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({ fullname, email, username, password }),
+                }
+              );
+
+              const data = await response.json();
+              if (response.ok) {
+                alert("Registration successful! Please login.");
+                toggleForm(); // Switch back to login form
+              } else {
+                document.getElementById("error-message").textContent =
+                  data.message || "Registration failed";
+              }
+            } catch (error) {
+              console.error("Error:", error);
+              document.getElementById("error-message").textContent =
+                "An error occurred. Please try again.";
+            }
+          }
+        </script>
+      </body>
+    </html>
+  </body>
+</html>
