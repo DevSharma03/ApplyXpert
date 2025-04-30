@@ -136,38 +136,4 @@ MIT
 
 ## Contact
 
-For support or questions, please contact [yourname@example.com](mailto:yourname@example.com)
-
-JD:
-
-Job Title: Full Stack Web Developer (React & Node.js)
-Job Description:
-We are seeking a highly motivated Full Stack Web Developer with strong proficiency in JavaScript, React.js, Node.js, and Express.js to join our growing tech team. The ideal candidate will have hands-on experience building responsive and scalable web applications from the ground up. You’ll work on cross-functional teams to design, develop, and deploy dynamic solutions for real-world use cases.
-
-Responsibilitis:
-Design and implement responsive web applications using React.js, JavaScript, HTML5, and CSS3.
-Develop robust backend APIs with Node.js and Express.js, and manage data using MongoDB and MySQL.
-Integrate RESTful APIs with front-end components ensuring high performance and responsiveness.
-Collaborate with designers and other developers to build seamless, user-friendly features.
-Utilize version control systems (Git/GitHub) for code management and collaboration.
-Optimize applications for maximum speed, scalability, and maintainability.
-Use Google Cloud Platform (GCP) and hosting services like Vercel/Netlify for deployment and cloud integration.
-Implement authentication (JWT), role-based access control, and WebSocket features where needed.
-Write clean, maintainable, and well-documented code.
-Participate in agile development cycles, code reviews, and continuous integration workflows.
-
-Requirements:
-Strong foundation in JavaScript, HTML5, and CSS3.
-Experience with React.js, Redux, Next.js, and TailwindCSS.
-Backend development experience using Node.js, Express.js, MongoDB, MySQL, and Mongoose.
-Familiarity with EJS Templates and full-stack rendering concepts.
-Proficient in using RESTful APIs, Git, GitHub, and deployment tools.
-Understanding of cloud services like Google Cloud Platform (GCP).
-Good communication, problem-solving, and teamwork skills.
-Bachelor's degree in Computer Science, AI & Data Science, or a related field (or pursuing).
-
-Preferred Skills (Nice to Have):
-Knowledge of Python and AI agent integration.
-Experience working on OCR-based tools and real-time applications.
-Exposure to ERP systems, event management platforms, or medical web applications.
-Certifications in Full Stack Web Development, Google IT Automation, or Data Analysis.
+For support or questions, please contact [yourname@example.com](mailto:work.devashishsharma09@gmail.com)
