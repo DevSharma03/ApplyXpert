@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ApplyXpert/static/css/main.9c1acf7c.css",
+    "main.js": "/ApplyXpert/static/js/main.1c6fb355.js",
+    "static/media/Logo.png": "/ApplyXpert/static/media/Logo.45d091764e6d458fb328.png",
+    "static/media/HomeImg.jpg": "/ApplyXpert/static/media/HomeImg.73b5b9d96fa3899376f5.jpg",
+    "index.html": "/ApplyXpert/index.html",
+    "main.9c1acf7c.css.map": "/ApplyXpert/static/css/main.9c1acf7c.css.map",
+    "main.1c6fb355.js.map": "/ApplyXpert/static/js/main.1c6fb355.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c1acf7c.css",
+    "static/js/main.1c6fb355.js"
+  ]
+}
