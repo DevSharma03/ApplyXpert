@@ -1,4 +1,4 @@
-# ATS Resume Analyzer
+# ATS Resume Analyzer & Job Auto Applier
 
 This application helps job seekers improve their resumes by analyzing them against job descriptions using NLP techniques.
 
