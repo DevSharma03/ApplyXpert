@@ -12,7 +12,7 @@ This application helps job seekers improve their resumes by analyzing them again
 
 ## Setup Instructions
 
-### Prerequisites
+### Prerequisites 
 
 - Node.js (v14 or higher)
 - Python 3.8+ with pip
