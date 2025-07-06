@@ -1,0 +1,66 @@
+Job Title: React Developer
+We are seeking a talented React Developer to join our innovative team. The ideal candidate will be
+responsible for building modern, scalable, and high-performance web applications using React.js
+and associated technologies.
+Responsibilities:
+- Develop new user-facing features using React.js.
+- Build reusable components and front-end libraries for future use.
+- Translate designs and wireframes into high-quality code.
+- Optimize components for maximum performance across a vast array of web-capable devices and
+browsers.
+- Collaborate with back-end developers and web designers to improve usability.
+Requirements:
+- Strong proficiency in JavaScript, including DOM manipulation and the JavaScript object model.
+- Thorough understanding of React.js and its core principles.
+- Experience with popular React.js workflows (such as Redux or Context API).
+- Familiarity with RESTful APIs and modern front-end build pipelines and tools.
+- Knowledge of modern authorization mechanisms, such as JSON Web Token.
+- Experience with code versioning tools such as Git.
+- BSc in Computer Science or related field.
+Keywords: JavaScript, React, Redux, REST API, Frontend, Web Development, Git, JSON, JWT,
+Responsive Design, UI/UX, React Hooks, HTML, CSS
+
+
+
+
+
+
+
+
+
+Job Title: AI/ML Developer
+We are seeking a passionate and skilled AI/ML Developer to join our data science team. The ideal candidate will design, build, and deploy machine learning models and AI solutions that solve real-world business challenges and improve decision-making processes.
+
+Responsibilities:
+Design and implement machine learning models and deep learning algorithms for classification, regression, clustering, and prediction tasks.
+
+Work with large and complex datasets to extract meaningful insights.
+
+Preprocess, clean, and transform data using Python-based libraries.
+
+Develop end-to-end machine learning pipelines including data ingestion, feature engineering, model training, evaluation, and deployment.
+
+Collaborate with software engineers, data scientists, and stakeholders to integrate AI solutions into production environments.
+
+Research and stay updated with the latest advancements in machine learning and AI technologies.
+
+Optimize models for accuracy, scalability, and performance.
+
+Requirements:
+Strong programming skills in Python and familiarity with libraries such as NumPy, Pandas, Scikit-learn, TensorFlow, and PyTorch.
+
+Solid understanding of machine learning algorithms and statistical methods.
+
+Experience with deep learning, computer vision, NLP, or recommendation systems is a plus.
+
+Familiarity with cloud platforms (AWS, GCP, or Azure) and model deployment tools (Docker, Flask, FastAPI).
+
+Knowledge of SQL and NoSQL databases.
+
+Excellent problem-solving skills and the ability to work in a collaborative team environment.
+
+Bachelor’s or Master’s degree in Computer Science, Data Science, Artificial Intelligence, or related field.
+
+
+
+
