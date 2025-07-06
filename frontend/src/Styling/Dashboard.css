@@ -1,0 +1,147 @@
+.dashboard-container {
+    width: 100%;
+    color: #474E68;
+}
+
+/* Sidebar Navigation */
+.dashboard-nav {
+    background: rgb(25, 43, 53);
+    padding: 30px 0px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    gap: 30px;
+}
+
+.dashboard-logo {
+    width: 100%;
+    height: auto;
+    padding: 15px 10px;
+    object-fit: contain;
+}
+
+.dashboard-nav-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.dashboard-nav-list li {
+    width: 100%;
+}
+
+.dashboard-nav-item {
+    display: block;
+    text-decoration: none;
+    color: #BCCCDC;
+    font-size: 18px;
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.dashboard-nav-item:hover {
+    background-color: #3282B8;
+    color: #ffffff;
+}
+
+/* Main Dashboard Area */
+.dashboard-main {
+    padding: 40px;
+    background-color: #F5EEDC;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.dashboard-content{
+    text-align: center;
+    padding: 40px;
+}
+
+.dashboard-content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Reusable Cards */
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.dashboard-card {
+    background-color: #DEAA79;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 calc(33% - 20px);
+    min-width: 250px;
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.dashboard-withoutlogin-card {
+    background-color: #DEAA79;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 calc(33% - 20px);
+    min-width: 250px;
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-heading {
+    font-size: 32px;
+    color: #522546;
+    margin-bottom: 20px;
+}
+
+.dashboard-text {
+    font-size: 18px;
+    color: #522546;
+    margin-bottom: 20px;
+}
+
+/* Button on Login Required Card */
+.applyjob-button {
+    background-color: #3282B8;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.applyjob-button:hover {
+    background-color: #255c87;
+}
+
+/* Logout Button */
+.dashboard-logout-btn {
+    background-color: rgb(25, 43, 53);
+    border: none;
+    text-align: left;
+}
+
+/* Footer */
+.dashboard-footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: #BCCCDC;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}

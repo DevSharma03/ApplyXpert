@@ -1,0 +1,21 @@
+{
+  "short_name": "ApplyXpert",
+  "name": "ApplyXpert - Job Application Tracker",
+  "icons": [
+    {
+      "src": "logo-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#522546",
+  "background_color": "#F5EEDC",
+  "description": "Streamline your job applications with ApplyXpert. Track, apply, and succeed effortlessly!"
+}
