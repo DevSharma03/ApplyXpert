@@ -2,7 +2,7 @@
 
 This application helps job seekers improve their resumes by analyzing them against job descriptions using NLP techniques. ( Work In progress)
 
-## Features
+## Features 
 
 - Upload multiple resumes and compare them against job descriptions
 - Get ATS match scores for each resume
